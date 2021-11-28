@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основні властивості CSS</title>
+    <link rel="stylesheet" href="../styles/03.css" type="text/css">
+</head>
+<body>
+    <h1>Основні властивості CSS для роботи з текстом</h1>
+    <h2>Властивість font-size</h2>
+    <div id="text">Властивість <span class ="color">font-size</span> змінює розмір шрифта<br>
+     Розмір шрифту задається за допомогою значення та одиниць виміру ( <span class ="color">em, px, pt, %</span>)</div>
+    <h3>Синтаксис:</h3>
+    <p>CSS</p>
+    <div id="text2">
+    <pre><code>p{
+  font-size: 20px;
+}</code></pre>
+    </div>
+    <p>HTML</p>
+    <div id="text2">
+    <pre>&lt;p&gt;Hello, world!&lt;/p&gt;</pre>
+  </div>
+    <h3>Результат:</h3>
+    <div id="text2"><div>Hello, world!</div></div>
+
+    <h2>Властивість font-weight</h2>
+    <div id="text">Властивість <span class ="color">font-weight</span> встановлє насиченість шрифту.<br>
+    Може пиймати наступні значення:</div>
+    <ul>
+         <li><span class ="color">normal</span> - нормальна насиченість, те саме, що і 400</li>
+         <li><span class ="color">bord</span> - напівжирний текст, те саме, що і 700</li>
+         <li><span class ="color">lighter</span> - змінює насиченість відносно батьківського стилю в меншу сторону</li>
+         <li><span class ="color">bolder</span> - змінює насиченість відносно батьківського стилю в більшу сторону</li>
+         <li><span class ="color">100,200,300,400,500,600,700,800,900</span> - цифрові значення насиченості, які відрізняються від стандартних</li>
+    </ul>
+    <h3>Синтаксис:</h3>
+    <p>CSS</p>
+    <div id="text2">
+    <pre><code>.bold{
+  font-weight: bold;
+}
+.thin{
+  font-weight: 100;
+}
+.max{
+  font-weight: 900;
+}</code></pre>
+    </div>
+   <p>HTML</p>
+   <div id="text2">
+   <pre>&lt;p&gt;
+&lt;span class ="bold"&gt;Напівжирний текст&lt;/span&gt;,
+&lt;span class ="thin"&gt;найтонший текст&lt;/span&gt;,
+&lt;span class ="max"&gt;найтовший текст&lt;/span&gt;.
+&lt;/p&gt;</pre>
+</div>
+    <h3>Результат:</h3>
+    <div id="text2"><p>
+        <span class ="bold">Напівжирний текст</span>,
+        <span class ="thin">найтонший текст</span>,
+        <span class ="max">найтовший текст</span>.
+    </p></div>
+
+    <h2>Властивість font-style</h2>
+    <div id="text">Властивість <span class ="color">font-style</span> 
+    визначає зображення шрифту - звичайне, курсивне або похило.</div>
+    <ul>
+    <li><span class ="color">normal</span> - обычное начертание текста.</li>
+    <li><span class ="color">italic</span> - курсивное начертание.</li>
+    <li><span class ="color">oblique</span> - наклонное начертание.</li>
+    <li><span class ="color">inherit</span> - наследует значение родителя.</li>
+    </ul>
+    <h3>Синтаксис:</h3>
+    <p>CSS</p>
+    <div id="text2">
+    <pre><code>
+.ital{
+  font-style: italic;
+}
+.obliq{
+  font-style: oblique;
+}</code></pre>
+    </div>
+    <p>HTML</p>
+   <div id="text2">
+   <pre>&lt;p&gt;
+&lt;span class ="ital"&gt;Курсивний текст&lt;/span&gt;,
+&lt;span class ="obliq"&gt;наклоний текст&lt;/span&gt;.
+&lt;/p&gt;</pre>
+</div>
+<h3>Результат:</h3>
+<div id="text2"><p>
+    <span class ="ital">Курсивний текст</span>,
+    <span class ="obliq">наклоний текст</span>.
+</p></div>
+
+<h2>Властивість color</h2>
+<div id="text">Властивість <span class ="color">color</span> визначає колір тексту елемента.</div>
+<h3>Синтаксис:</h3>
+<p>CSS</p>
+<div id="text2">
+<pre><code>.letter {
+color: blue;
+} 
+</code></pre>
+</div>
+<p>HTML</p>
+<div id="text2">
+<pre>&lt;p&gt;
+&lt;span class="letter"&gt;Текст змінив колір&lt;/span&gt;
+&lt;/p&gt;</pre>
+</div>
+<h3>Результат:</h3>
+<div id="text2"><p>
+<span class="letter">Текст змінив колір</span>
+</p></div>
+
+<h2>Властивість text-transform</h2>
+<div id="text">Властивість <span class ="color">text-transform</span> керує перетворенням тексту елемента у великі або прописні символи.</div>
+<ul>
+    <li><span class="color">capitalize</span> - перший символ кожного слова у реченні буде великим.</li>
+    <li><span class="color">lowercase</span> - всі символи тексту стають малими (нижній регістр).</li>
+    <li><span class="color">uppercase</span> - всі символи тексту стають великими (верхній регістр).</li>
+    <li><span class="color">none</span> - не змінює регістр символів.</li>
+</ul>
+<h3>Синтаксис:</h3>
+<p>CSS</p>
+<div id="text2">
+<pre><code>
+.cap{
+    text-transform: capitalize;
+}
+.lower{
+     text-transform: lowercase;   
+}
+.upper{
+    text-transform: uppercase;
+}
+</code></pre>
+</div>
+<p>HTML</p>
+<div id="text2">
+<pre>&lt;p&gt;
+&lt;span class="cap"&gt;Перший символ великий&lt;/span&gt;,
+&lt;span class="lower"&gt;кожен символ малий&lt;/span&gt;,
+&lt;span class="upper"&gt;кожен символ великий&lt;/span&gt;.
+&lt;/p&gt;</pre>
+</div>
+<h3>Результат:</h3>
+<div id="text2"><p>
+<span class="cap">Перший символ великий</span>,
+<span class="lower">кожен символ малий</span>,
+<span class="upper">кожен символ великий</span>.
+</p></div>
+
+<h2>Властивість text-decoration</h2>
+<div id="text">Властивість <span class ="color">text-decoration</span> додає оформлення тексту як його підкреслення, перекреслення, лінії над текстом і миготіння.</div>
+<ul>
+    <li><span class="color">blink</span> - встановлює миготливий текст.</li>
+    <li><span class="color">line-through</span> - створює перекреслений текст.</li>
+    <li><span class="color">overline</span> - лінія проходить над текстом.</li>
+    <li><span class="color">underline</span> - встановлює підкреслений текст.</li>
+    <li><span class="color">none</span> - скасовує всі ефекти, у тому числі й підкреслення у посилань, заданих за замовчуванням.</li>
+</ul>
+<h3>Синтаксис:</h3>
+<p>CSS</p>
+<div id="text2">
+<pre><code>
+    .blic{
+        text-decoration: blink;
+    }
+    .throu{
+        text-decoration: line-through;
+    }
+    .over{
+        text-decoration: overline;
+    }
+    .under{
+        text-decoration: underline;
+    }
+</code></pre>
+</div>
+<p>HTML</p>
+<div id="text2">
+<pre>&lt;p&gt;
+    &lt;span class="blic"&gt;текст миготить&lt;/span&gt;,
+    &lt;span class="throu"&gt;текст перекреслений&lt;/span&gt;,
+    &lt;span class="over"&gt;текст підчеркнутий зверху&lt;/span&gt;,
+    &lt;span class="under"&gt;текст підчеркнутий знизу&lt;/span&gt;.
+&lt;/p&gt;</pre>
+</div>
+<h3>Результат:</h3>
+<div id="text2"><p>
+<span class="blic">текст миготить</span>,
+<span class="throu">текст перекреслений</span>,
+<span class="over">текст підчеркнутий зверху</span>,
+<span class="under"></span>.
+</p></div>
+</body>
+</html>
