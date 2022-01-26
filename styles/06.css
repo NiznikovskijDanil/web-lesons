@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    font-family: Roboto;
+}
+.body{
+    background-color: #3397da;
+}
+.fieldset{
+    background-color: #ffffff;
+    border: 3px solid #fefefe; 
+    border-radius: 10px; 
+    width: 200px ;
+    height: 400px;
+    position: absolute ;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+.h1{
+    font-size: 60px;
+    padding-left: 150px;
+    color: #767675;
+}
+.input::placeholder {
+    color: #bdbec2;
+    font-size: 30px;
+  }
+.input{
+    width: 250px ;
+    height: 50px;
+    border: 3px solid #ebeff1; 
+    border-radius: 5px; 
+    background-color: #dad7d780;
+    padding-left: 150px;
+    margin-bottom: 10px;
+}
+.button{
+    border: 3px solid #ffffff; 
+    border-radius: 5px; 
+    background-color:#3398da;
+    color:white;
+    width: 420px ;
+    height: 80px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.a{
+    margin-left: 140px;
+    margin-right: 20px
+}
